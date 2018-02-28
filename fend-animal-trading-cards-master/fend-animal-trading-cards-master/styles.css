@@ -1,24 +1,35 @@
 /* add your CSS here */
 
 #img{
-/* height: 100%; */
-width: 300px;
-}
+    /* height: 100%; */
+    width: 300px;
+    }
 
-.border{
-  border : 10px ;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-shadow: 7px 10px 19px -1px rgba(171,162,171,1);
+    .bord{
+      border : 10px ;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      box-shadow: 7px 10px 19px -1px rgba(171,162,171,1);
+      border-style: solid;
+      border-width: thin;
 
-}
+    }
 
-#blocked{
-  display: block;
-}
+    #blocked{
+      display: block;
+    }
 
-.pads{
-  padding-bottom: 5px;
-}
+    .pads{
+      padding-bottom: 5px;
+    }
+    .div-bor{
+      border-style: solid;
+      border-width: thin;
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      background-color: aliceblue;
+    }
+    
