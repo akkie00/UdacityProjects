@@ -7,8 +7,8 @@
 
 var num = 10;
 
-while ( num >= 0 ) {
-  console.log("T-"+num+" seconds");
+while ( num >= 0 ) { //putting the condition to go through every countdown
+  //every if/else if statement checks for the particular time and gives to context of the countdown
   if (num === 50 ) {
     console.log("Orbiter transfers from ground to internal power");
   }
@@ -27,5 +27,8 @@ while ( num >= 0 ) {
   else if ( num === 0 ) {
     console.log("Solid rocket booster ignition and liftoff!");
   }
+  else{
+  console.log("T-"+num+" seconds");
+}
 num--;
 }
