@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="pixel.css">
-    <script src="pixel.js"></script>
 </head>
 <body class="body">
     <div class="container">
@@ -15,18 +14,20 @@
         <div>
             <form id="sizeOfGrid">
                 Grid Height
-                <input type="number" id="inputHeight" value="1" min="1">
+                <input type="number" id="inputHeight" name="height" value="1" min="1">
                 Grid Width
-                <input type="number" id="inputWidth" value="1" min="1">
+                <input type="number" id="inputWidth" name="width" value="1" min="1">
                 <input type="submit">
             </form>
             <br>
-            Select the color <input type="color">
+            Select the color <input type="color" id="colorPicker">
             <h2>Your desierd canvas</h2>
             <table id="gridMaker">
             
             </table>
         </div>
     </div>
+    <script src="pixel.js"></script>
+
 </body>
 </html>

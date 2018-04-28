@@ -1,17 +1,22 @@
 //getting the values entered by the user
 
 var height, width, color;
-console.log("hery");
-$('#sizeOfGrid').submit(function(event){
-    console.log("hey");
+// console.log("hery");
+$('#sizeOfGrid').submit(function (event) {
     event.preventDefault();
     height = $("#inputHeight").val();
-    width = $("#inputWidth").val();
-    makeGrid(height, width);
-    console.log(height+ " is height");
+    width = $('#inputWidth').val();
+    // console.log(height+ " is height and width is "+width);
 
+    makeGrid(height, width);
 });
 
-function makeGrid(){
-    
+function makeGrid(h, w) {
+    $('tr').remove();
+    for(var i = 1; i <= h; i++){
+        $('#gridMaker').append('<tr id=table'+i+'></tr>');  
+        for(var j=1; j <= w; j++){
+            $('#table'+i).append('<td></td>');
+        }  
+    }
 }
