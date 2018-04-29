@@ -19,4 +19,14 @@ function makeGrid(h, w) {
             $('#table'+i).append('<td></td>');
         }  
     }
+
+    $('td').click(function addColor(){
+        color = $('#colorPicker').val();
+        
+        if($(this).attr('style')){
+            $(this).removeAttr('style');
+        }else{
+            $(this).attr('style', 'background-color:'+color);
+        }
+    })
 }
